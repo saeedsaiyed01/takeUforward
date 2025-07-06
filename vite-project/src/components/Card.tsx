@@ -139,20 +139,21 @@ export default function CardSection() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="w-full max-w-7xl mx-auto mt-16">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+    <section className="w-full max-w-5xl mx-auto mt-16 flex flex-col items-center justify-center text-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center animate-fade-in">
         Everything You Need to <span className="text-orange-400">Crack Interviews</span> <span role="img" aria-label="muscle">💪</span>
       </h2>
-      <div className="flex gap-4 justify-center mb-10 flex-wrap">
+      <div className="flex gap-4 justify-center mb-10 flex-wrap animate-fade-in-up">
         {tabData.map((tab, idx) => (
           <button
             key={tab.label}
             className={`px-6 py-2 rounded-lg font-semibold text-base transition-all duration-200 border-2 border-transparent focus:outline-none ${
               activeTab === idx
-                ? 'bg-[#181824] text-orange-400 border-orange-400 shadow-md'
-                : 'bg-[#10141a] text-white hover:text-orange-400 hover:border-orange-400'
+                ? 'bg-[#181824] text-orange-400 border-orange-400 shadow-md scale-105'
+                : 'bg-[#10141a] text-white hover:text-orange-400 hover:border-orange-400 hover:scale-105'
             }`}
             onClick={() => setActiveTab(idx)}
+            style={{ transition: 'transform 0.2s' }}
           >
             {tab.label}
             {['Premium', 'System Design', 'Aptitude'].includes(tab.label) && (
@@ -161,11 +162,29 @@ export default function CardSection() {
           </button>
         ))}
       </div>
-      <div className="flex gap-8 overflow-x-auto p-6 bg-transparent justify-center">
+      <div className="flex gap-8 overflow-x-auto p-6 bg-transparent justify-center animate-fade-in-up">
         {tabData[activeTab].cards.map((card, idx) => (
-          <Card key={idx} {...card} />
+          <div key={idx} className="animate-fade-in-up">
+            <Card {...card} />
+          </div>
         ))}
       </div>
+      <style>{`
+        @keyframes fade-in-up {
+          0% { opacity: 0; transform: translateY(40px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+        }
+        @keyframes fade-in {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        .animate-fade-in {
+          animation: fade-in 1.2s ease both;
+        }
+      `}</style>
     </section>
   );
 }
