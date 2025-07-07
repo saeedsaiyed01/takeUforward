@@ -16,7 +16,7 @@ export default function Navbar() {
                     <a href="#" className="text-white/90 hover:text-white transition font-medium">Pricing</a>
                     <div className="relative group">
                         <button className="text-white/90 hover:text-white transition font-medium">Resources ▼</button>
-                        {/* Dropdown menu on hover (optional) */}
+            b            {/* Dropdown menu on hover (optional) */}
                         <div className="absolute hidden group-hover:block bg-[#2a2a2e] mt-2 rounded shadow-md p-2">
                             <a href="#" className="block px-4 py-2 hover:bg-[#3a3a3e] rounded">Blog</a>
                             <a href="#" className="block px-4 py-2 hover:bg-[#3a3a3e] rounded">Tutorials</a>
@@ -25,13 +25,7 @@ export default function Navbar() {
                 </div>
                 {/* Right: Moon Icon and Profile Avatar */}
                 <div className="flex items-center space-x-4 p-1">
-                  
-                    <span className="w-10 h-10 rounded-full bg-gray-900 border-2 border-gray-600 flex items-center justify-center overflow-hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#d1d8db" viewBox="0 0 24 24" className="w-8 h-8">
-                            <circle cx="12" cy="8" r="4" fill="#e5ecee" />
-                            <path d="M4 20c0-2.21 3.58-4 8-4s8 1.79 8 4" fill="#d1d8db" />
-                        </svg>
-                    </span>
+                    <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-5 py-2 rounded-xl shadow transition-all">Login</button>
                 </div>
             </div>
         </nav>

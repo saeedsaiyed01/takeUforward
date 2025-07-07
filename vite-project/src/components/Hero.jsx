@@ -19,6 +19,7 @@ export default function Hero() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80vw] h-[40vh] bg-gradient-to-b from-[#ff9100]/30 via-transparent to-transparent rounded-full blur-3xl opacity-60" />
       </div>
       <div className="relative z-20 flex flex-col items-center justify-center w-full max-w-2xl mx-auto">
+        <div className='text-gray-300 mb-3 w-auto h-auto px-3 py-1 text-sm border-gray-900 border-2 bg-gray-900 rounded-full'><span>🎯Crafted by Top Engineers</span></div>
         <h1
           className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-xl leading-tight text-center"
           style={{ fontFamily: 'Instrument Serif, serif', lineHeight: '1.15' }}
