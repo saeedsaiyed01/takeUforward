@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaYoutube } from 'react-icons/fa';
 import Xlogo from '../icons/Xlogo';
-import logo from "../logos/logo.png";
 
 const companyLinks = [
   'About Us',
@@ -35,7 +34,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-0 justify-between items-start">
       {/* Logo and description */}
       <div className="md:w-1/4 mb-8 md:mb-0">
-        <img src={logo} alt="TUF" className="h-10 mb-4" />
+        <img src={'./logo.png'} alt="TUF" className="h-10 mb-4" />
         <p className="text-gray-400 mb-6 text-sm max-w-xs pr-10 ">
           The best place to learn data Structures, algorithms, most asked coding interview questions, real interview experiences free of cost.
         </p>

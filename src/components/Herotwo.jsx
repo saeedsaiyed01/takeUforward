@@ -1,6 +1,6 @@
 import React from 'react';
-import striver from '../logos/striver.webp';
 
+  
 export default function Herotwo() {
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-center min-h-[70vh] bg-[#0B0B0F] px-4 py-16 gap-10 overflow-hidden">

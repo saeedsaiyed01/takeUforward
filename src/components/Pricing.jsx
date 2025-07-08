@@ -62,7 +62,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <div className="bg-[#0f0f0f] min-h-screen py-4 px-4  mt- md:px-20 font-sans" style={{ fontFamily: 'Geist, Geist Fallback, sans-serif' }}>
+    <div className="bg-[#0f0f0f] min-h-screen py-4 px-4   mt-0 md:px-20 font-sans" style={{ fontFamily: 'Geist, Geist Fallback, sans-serif' }}>
       <h2 className="text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-orange-500">Affordable Plans for Everyone</h2>
       <p className="text-center text-gray-400 mb-12">Choose the plan that fits your journey. Unique benefits, transparent pricing.</p>
       <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">

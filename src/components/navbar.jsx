@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logos/logo.png'
 
 export default function Navbar() {
     return (
@@ -7,7 +6,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between w-full px-6" style={{ fontFamily: 'Geist, Geist Fallback, sans-serif' }}>
                 {/* Left: Logo and Brand */}
                 <div className="flex items-center space-x-3">
-                    <img src={logo} alt="logo" className="w-11 h-5" />
+                    <img src={'./logo.png'} alt="logo" className="w-11 h-5" />
                     <span className="text-lg font-medium text-white">takeUforward</span>
                 </div>
                 {/* Center: Nav Links */}

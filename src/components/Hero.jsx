@@ -1,12 +1,12 @@
 import React from 'react';
-import bg5 from "../logos/bg5.jpg";
+
 
 export default function Hero() {
   return (
     <section
       className="relative flex flex-col items-center justify-center min-h-[60vh] py-20 px-4 text-center overflow-hidden w-full"
       style={{
-        backgroundImage: `url(${bg5})`,
+        backgroundImage: `url('./bg5.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

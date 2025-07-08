@@ -1,5 +1,5 @@
 import React from 'react';
-import tufLogo from '../logos/logo.png';
+
 
 const features = [
   {
@@ -45,13 +45,13 @@ const features = [
 ];
 
 const ComparisonTable = () => (
-  <div className="bg-[#181c1f] rounded-2xl p-4 md:p-8 max-w-6xl mx-auto mt-10 mb-10 shadow-xl border border-gray-800" style={{ fontFamily: 'Geist, Geist Fallback, sans-serif' }}>
+  <div className="bg-[#181c1f] rounded-2xl p-4 md:p-8 max-w-6xl mx-auto mt-10 mb-10  shadow-xl border border-gray-800" style={{ fontFamily: 'Geist, Geist Fallback, sans-serif' }}>
     <table className="w-full text-left text-gray-100">
       <thead>
         <tr className="border-b border-gray-700">
           <th className="py-4 px-2 text-xl font-bold">Features</th>
           <th className="py-4 px-2 text-center">
-            <img src={tufLogo} alt="TUF" className="h-8 mx-auto" />
+            <img src={'./logo.png'} alt="TUF" className="h-8 mx-auto" />
           </th>
           <th className="py-4 px-2 text-xl font-bold text-right md:text-center">Other Platforms</th>
         </tr>
